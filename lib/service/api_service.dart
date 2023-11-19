@@ -3,9 +3,9 @@ import 'package:retrofit/retrofit.dart';
 import 'package:dio/dio.dart';
 part 'api_service.g.dart';
 
-@RestApi(baseUrl: 'https://localhost/api/v1')
+@RestApi(baseUrl: 'http://localhost:8080/api/v1')
 abstract class ApiService {
-  factory ApiService(Dio dio, {String baseUrl}) = _ApiService;
+  factory ApiService(Dio dio) = _ApiService;
 
   @GET('/status')
   Future<StatusModel> getStatus();
