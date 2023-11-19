@@ -24,28 +24,23 @@ class Home extends StatelessWidget {
       future: apiService.getStatus(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.done) {
-          print(snapshot);
           if (snapshot.data != null) {
-
             final StatusModel data = snapshot.data!;
-
-            // Build your UI using the fetched data
             return _posts(data);
           } else {
-            // Handle the case where data is null
-            return const Text('Error: Data is null');
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
           }
         } else if (snapshot.hasError) {
           return Text('Error: ${snapshot.error}');
         } else {
-          // Handle other connection states like ConnectionState.waiting
           return const CircularProgressIndicator();
         }
       },
     );
   }
   Widget _posts(StatusModel status) {
-    print("chefcking");
     return Text(status.status);
   }
 }
