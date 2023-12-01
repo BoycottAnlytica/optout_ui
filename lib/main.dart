@@ -33,7 +33,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  void _incrementCounter() {
+  void _sendToBarcodeScanPage() {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const Home()),
