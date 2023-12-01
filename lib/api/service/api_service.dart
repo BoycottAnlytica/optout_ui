@@ -1,7 +1,7 @@
 import 'package:optout_ui/models/status_model.dart';
 import 'package:retrofit/retrofit.dart';
 import 'package:dio/dio.dart';
-import '../config/env.dart';
+import 'package:optout_ui/config/env.dart';
 
 part 'api_service.g.dart';
 

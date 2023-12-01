@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:optout_ui/models/status_model.dart';
-import '../service/api_service.dart';
+import 'package:optout_ui/api/service/api_service.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
