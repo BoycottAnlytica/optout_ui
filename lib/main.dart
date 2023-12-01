@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void _sendToBarcodeScanPage() {
     Navigator.push(
       context,
-      MaterialPageRoute(builder: (context) => const Home()),
+      MaterialPageRoute(builder: (context) => const BarcodeScanPage()),
     );
   }
 
