@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:optout_ui/pages/barcode_scan_page.dart';
 import 'package:optout_ui/pages/home.dart';
 
 void main() {
